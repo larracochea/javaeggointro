@@ -24,15 +24,18 @@ public class ej_23ex {
             System.out.println("dato correcto");   
             
             do{
-             filas [i]= leer.nextInt();
+             filas [i]=(int)(Math.random()*20);
              check=true;
                 for (int j = 0; j < i; j++) {
-                    if (filas[i] == filas[j] && i!=j) {
+                    if (filas[i] == filas[j]) {
                       check=false;  
                     }
-  
+                    
                 }
-            }while(check=false);
+                if (check) {
+                        break;
+                    }
+            }while(0<1);
             }
             
             for (int j = 0; j < 20; j++) {
